@@ -1,11 +1,2 @@
 inputs/cherry_leaves/cherry-leaves/validation
-output/v1/avg_diff.png
-output/v1/avg_var_healthy.png
-output/v1/avg_var_powdery_mildew.png
-output/v1/class_indices.pkl
-output/v1/evaluation.pkl
-output/v1/image_shape.pkl
-output/v1/labels_distribution.png
-output/v1/model_training_acc.png
-output/v1/model_training_losses.png
 output/v1/powdery_mildew_detector_model.h5
