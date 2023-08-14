@@ -1,3 +1,5 @@
+inputs/cherry_leaves/cherry-leaves/test
+input/cherry_leaves/cherry-leaves/train
 core.Microsoft*
 core.mongo*
 core.python*
