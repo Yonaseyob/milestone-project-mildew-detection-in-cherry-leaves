@@ -4,4 +4,4 @@ inputs/cherry_leaves/cherry-leaves/validation
 kaggle.json
 *.ipynb
 .devcontainer
-__pycache__/
+output/v1
