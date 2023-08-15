@@ -1,54 +1,7 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-## Codeanywhere Template Instructions
+![pmd](https://github.com/Yonaseyob/milestone-project-mildew-detection-in-cherry-leaves/assets/112119971/9a406ffa-cb96-457f-b411-efd1bfd36b72)
 
-Welcome,
-
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the Codeanywhere Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Codeanywhere Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use. 
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into <a href="https://app.codeanywhere.com/" target="_blank" rel="noreferrer">CodeAnywhere</a> with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and <code>pip3 install -r requirements.txt</code>
-
-1. In the terminal type <code>pip3 install jupyter</code>
-
-1. In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
-
-1. Open port 8888 preview or browser
-
-1. Open the jupyter_notebooks directory in the jupyter webpage that has opened and click on the notebook you want to open.
-
-1. Click the button Not Trusted and choose Trust.
-
-Note that the kernel says Python 3. It inherits from the workspace so it will be Python-3.8.12 as installed by our template. To confirm this you can use <code>! python --version</code> in a notebook code cell.
-
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
+A powdery mildew detector is an ML system that helps the user to detect a powdery mildew fungus on a given leaf.
 
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
@@ -99,6 +52,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Dashboard Design
 ### Page 1: Quick Project Summary
+![pmdps](https://github.com/Yonaseyob/milestone-project-mildew-detection-in-cherry-leaves/assets/112119971/63b39baa-0b97-4eb7-ac8a-8f43361162a2)
 
 - Quick project summary
   - General Information
@@ -112,6 +66,7 @@ To save time in this process, the IT team suggested an ML system that detects in
     - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
 ### Page 2: Leaves Visualizer
+![pmdlv](https://github.com/Yonaseyob/milestone-project-mildew-detection-in-cherry-leaves/assets/112119971/7aba1c6b-c25c-4e2c-a231-af935b6c2af4)
 
 - It will answer business requirement 1
   - Checkbox 1 - Difference between average and variability image
@@ -119,6 +74,7 @@ To save time in this process, the IT team suggested an ML system that detects in
   - Checkbox 3 - Image Montage
 
 ### Page 3: Powdery Mildew Detector
+![pmdp](https://github.com/Yonaseyob/milestone-project-mildew-detection-in-cherry-leaves/assets/112119971/44e2e18d-611b-4e65-bf09-db95dc3d5770)
 
 - Business requirement 2 information  
 - Link to download a set of powdery mildew-contained and healthy leaves images for live prediction.
@@ -127,22 +83,23 @@ To save time in this process, the IT team suggested an ML system that detects in
 - Download button to download table.
 
 ### Page 4: Project Hypothesis and Validation
+![pmdph](https://github.com/Yonaseyob/milestone-project-mildew-detection-in-cherry-leaves/assets/112119971/76f7a685-d241-4efd-b2df-b744b463fa99)
 
 - Block for each project hypothesis, describe the conclusion and how you validated it.
 
 ### Page 5: ML Performance Metrics
+![pmdpm](https://github.com/Yonaseyob/milestone-project-mildew-detection-in-cherry-leaves/assets/112119971/6c883e0c-0146-4f52-ac80-860b1d57629e)
 
 - Label Frequencies for Train, Validation and Test Sets
 - Model History - Accuracy and Losses
 - Model evaluation result
 
-
-## Unfixed Bugs
-
+### Unfixed Bugs
+- I could not find any unfixed bugs.
+  
 ## Deployment
 ### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: https://powdery-mildew-detector2-ff6fa6cf58a7.herokuapp.com/
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 
@@ -150,31 +107,26 @@ To save time in this process, the IT team suggested an ML system that detects in
 2. At the Deploy tab, select GitHub as the deployment method.
 3. Select your repository name and click Search. Once it is found, click Connect.
 4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file. 
-
-
+5. The deployment process doesn't happen smoothly because of the slug size so I add large files not required for the app to the .slugignore file.
+6. After that deployment goes smoothly, and by clicking the button Open App on the top of the page to access the App.
+ 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
-
+* Here are the main libraries used in the project.
+* numpy
+* pandas
+* matplotlib
+* seaborn
+* plotly
+* streamlit
+* scikit-learn
+* tensorflow-cpu
+* keras
+* protobuf
 
 ## Credits 
-
-* In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
-
-
+- All the project ideas and structure is adopted from the code institute walkthrough01 project.
 
 ## Acknowledgements (optional)
-* Thank the people that provided support throughout this project.
+I would like to thank the slack team at project-portfolio-5-predictive-analytics.
