@@ -24,7 +24,7 @@ def page_powdery_mildew_detector_body():
 
     st.write("---")
 
-    images_buffer = st.file_uploader('Upload blood smear samples. You may select more than one.',
+    images_buffer = st.file_uploader('Upload Leaf image samples. You may select more than one.',
                                      type='png', accept_multiple_files=True)
 
     if images_buffer is not None:
@@ -32,7 +32,7 @@ def page_powdery_mildew_detector_body():
         for image in images_buffer:
 
             img_pil = (Image.open(image))
-            st.info(f"Blood Smear Sample: **{image.name}**")
+            st.info(f"Leaf image Sample: **{image.name}**")
             img_array = np.array(img_pil)
             st.image(
                 img_pil, caption=f"Image Size: {img_array.shape[1]}px width x {img_array.shape[0]}px height")
