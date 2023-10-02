@@ -4,4 +4,3 @@ inputs/cherry_leaves/cherry-leaves/validation
 kaggle.json
 *.ipynb
 .devcontainer
-*.h5
