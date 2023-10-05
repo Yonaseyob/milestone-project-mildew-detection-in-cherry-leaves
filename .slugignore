@@ -5,3 +5,4 @@ kaggle.json
 .devcontainer
 *.h5
 __pycache__/
+kaggle.json
