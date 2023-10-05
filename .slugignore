@@ -4,3 +4,4 @@ kaggle.json
 *.ipynb
 .devcontainer
 *.h5
+__pycache__/
