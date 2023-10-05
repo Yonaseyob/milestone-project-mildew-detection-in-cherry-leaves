@@ -3,5 +3,5 @@ input/cherry_leaves/cherry-leaves/train
 kaggle.json
 *.ipynb
 .devcontainer
-src/machine_learning
+.github/
 
